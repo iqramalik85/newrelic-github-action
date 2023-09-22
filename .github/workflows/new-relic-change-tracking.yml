@@ -22,6 +22,6 @@ jobs:
           changelog: "https://github.com/${{ github.repository }}/blob/master/CHANGELOG.md"
           commit: "${{ github.sha }}"
           description: "Automated Release via Github Actions"
-          deploymentType: "ROLLING"
+          deploymentType: "ROLLING" #This deployment strategy aims to minimize downtime and reduce the risk of service disruption by allowing the application to continue serving requests as the update progresses.
           groupId: "Workshop App Release: ${{ github.ref_name }}"
           user: "${{ github.actor }}"
